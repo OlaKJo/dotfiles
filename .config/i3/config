@@ -183,7 +183,8 @@ bar {
 
 # invert scrolling i.e. natural scrolling /Ola
 exec --no-startup-id synclient HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-113 NaturalScrolling=1
-for_window [class="^.*"] border pixel 0
+#for_window [class="^.*"] border pixel 0
+for_window [class="^.*"] border pixel 3
 gaps inner 10
 gaps outer 0
 
@@ -193,6 +194,6 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 4%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 

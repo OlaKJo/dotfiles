@@ -8,7 +8,8 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export TERM=rxvt-unicode
+export TERM='xterm-256color'
+
 # added by Anaconda2 5.3.0 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
